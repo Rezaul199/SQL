@@ -9,4 +9,11 @@ create table if not exists employee(
         );
 insert into employee values (1,'reza','electra','abu dhabi');
 select * from employee;
--- add new column named as date of birth
+#  add new column named as date of birth.
+
+alter table employee add DOB date;
+select * from employee;
+# change or modify data type of name coloum in existing table
+alter table employee modify column name Varchar (200);
+select * from employee;
+
