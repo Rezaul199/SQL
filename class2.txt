@@ -1,0 +1,12 @@
+CREATE database class2_db;
+use class2_db;
+create table if not exists employee(
+    
+        id int,
+        name VARCHAR(50),
+        address varchar(50),
+        city VARCHAR(50)
+        );
+insert into employee values (1,'reza','electra','abu dhabi');
+select * from employee;
+-- add new column named as date of birth
