@@ -16,4 +16,10 @@ select * from employee;
 # change or modify data type of name coloum in existing table
 alter table employee modify column name Varchar (200);
 select * from employee;
-
+--- delete a specific coloumn from existing TABLE or remove city coloum
+alter table employee drop column city;
+select * from employee ;
+--- command to rename existing column 
+--- for example change name coloumn to full_name colomn 
+alter table employee rename column name  to Full_name ;
+SELECT * from employee ;
