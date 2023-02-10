@@ -23,6 +23,11 @@ select * from employee ;
 --- for example change name coloumn to full_name colomn 
 alter table employee rename column name  to Full_name ;
 SELECT * from employee ;
+--add unique integrity constraint on id coloumn 
+alter table employee  add constraint id_unique unique(id);
+--- to check unique constraint
+insert into employee values(1,'juber','dubai','2022-05-02');
+
 --- create tables for Foreign Key demo
 create table customer
 (
